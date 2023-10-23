@@ -3,7 +3,7 @@ kind: StorageClass
 metadata:
   name: efs-encrypted
   annotations:
-    storageclass.kubernetes.io/is-default-class: "true"
+    storageclass.kubernetes.io/is-default-class: "false"
 provisioner: efs.csi.aws.com
 mountOptions:
   - tls
